@@ -1,0 +1,10 @@
+{
+  "name": "deno-framework",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "@swc/cli": "^0.1.55",
+    "@swc/core": "^1.2.135"
+  }
+}
