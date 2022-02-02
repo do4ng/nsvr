@@ -1,6 +1,6 @@
 {
   "name": "@nsvr/core",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "main": "dist/node.js",
   "license": "apache-2.0",
   "description": "Super Fast HTML Tool",
