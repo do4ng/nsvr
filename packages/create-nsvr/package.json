@@ -1,0 +1,22 @@
+{
+  "name": "create-nsvr",
+  "version": "1.0.4",
+  "license": "MIT",
+  "main": "index.js",
+  "homepage": "https://github.com/kangdongmandoo/nsvr",
+  "bin": {
+    "create-nsvr": "./index.js"
+  },
+  "files": [
+    "cli.js",
+    "template-*"
+  ],
+  "dependencies": {
+    "fs-extra": "^10.0.0"
+  },
+  "devDependencies": {
+    "@types/fs-extra": "^9.0.13",
+    "@types/inquirer": "^8.2.0",
+    "inquirer": "^8.2.0"
+  }
+}

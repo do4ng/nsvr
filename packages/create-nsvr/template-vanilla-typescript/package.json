@@ -1,0 +1,9 @@
+{
+  "name": "nsvr-app",
+  "scripts": {
+    "start": "nsvr"
+  },
+  "devDependencies": {
+    "@nsvr/core": "latest"
+  }
+}
