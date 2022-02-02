@@ -5,6 +5,14 @@
 - Support Typescript, Sass
 - Support HTML
 
+## Packages
+
+---
+
+| Package                              | Version |
+| ------------------------------------ | ------- |
+| [@nsvr/core](/)                      | `1.0.4` |
+| [create-nsvr](/packages/create-nsvr) | `1.0.4` |
 
 ## Create App
 
@@ -13,4 +21,3 @@
 ```bash
 npx create-nsvr
 ```
-
