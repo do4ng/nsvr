@@ -1,6 +1,7 @@
 /* eslint-disable no-underscore-dangle */
 /* eslint-disable new-cap */
 /* eslint-disable no-new */
+// eslint-disable-next-line object-curly-newline
 import { existsSync, readFileSync } from 'fs';
 import { createServer } from 'http';
 import path from 'path';
@@ -18,6 +19,15 @@ function CreateServer(config?: Config): void {
   const index = config?.index.main || 'index.html';
 
   const server = createServer((req, res) => {
+    const compile = (e?) => {
+      const compiled = CompileCode(
+        `${req.url}${e ? `.${e}` : ''}`,
+        readFileSync(path.join(cwd, `${req.url}${e ? `.${e}` : ''}`)).toString()
+      );
+
+      res.setHeader('Content-Type', compiled.type);
+      res.end(compiled.code);
+    };
     if (req.url.startsWith('/@nsvr/')) {
       const url = req.url.replace('/@nsvr/', '');
 
@@ -27,10 +37,11 @@ function CreateServer(config?: Config): void {
         res.end(readFileSync(path.join(__dirname, '../dist/client.js')));
       }
     } else if (existsSync(path.join(cwd, req.url)) && req.url !== '/') {
-      const compiled = CompileCode(req.url, readFileSync(path.join(cwd, req.url)).toString());
-
-      res.setHeader('Content-Type', compiled.type);
-      res.end(compiled.code);
+      compile();
+    } else if (existsSync(path.join(cwd, `${req.url}.js`)) && req.url !== '/') {
+      compile('js');
+    } else if (existsSync(path.join(cwd, `${req.url}.ts`)) && req.url !== '/') {
+      compile('ts');
     } else {
       res.setHeader('Content-Type', 'text/html');
       const html = new jsdom.JSDOM(readFileSync(path.resolve(process.cwd(), index)).toString());
