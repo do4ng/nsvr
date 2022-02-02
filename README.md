@@ -3,7 +3,7 @@
 > Super Fast HTML Tool
 
 - Support Typescript, Sass
-- Support HMR
+- Support DevServer
 
 ## Packages
 
