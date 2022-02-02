@@ -27,3 +27,13 @@ build({
   outfile: 'dist/cli.js',
   plugins: [nodeExternalsPlugin()],
 });
+
+/* packages */
+
+build({
+  entryPoints: ['packages/create-nsvr/index.ts'],
+  bundle: true,
+  platform: 'node',
+  outfile: 'packages/create-nsvr/index.js',
+  plugins: [nodeExternalsPlugin()],
+});
