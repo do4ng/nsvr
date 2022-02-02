@@ -1,6 +1,6 @@
 {
   "name": "@nsvr/core",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "main": "dist/node.js",
   "license": "apache-2.0",
   "description": "Super Fast HTML Tool",
@@ -36,6 +36,6 @@
     "ws": "^8.4.2"
   },
   "bin": {
-    "svr": "./dist/cli.js"
+    "nsvr": "./dist/cli.js"
   }
 }
