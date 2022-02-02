@@ -1,8 +1,10 @@
 {
   "name": "@nsvr/core",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "dist/node.js",
   "license": "apache-2.0",
+  "description": "Super Fast HTML Tool",
+  "homepage": "https://github.com/kangdongmandoo/nsvr",
   "scripts": {
     "start": "yarn run bundle && node dist/node",
     "bundle": "node scripts/build.js",
