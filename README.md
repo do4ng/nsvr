@@ -1,9 +1,10 @@
 # ⚡ NSVR
 
-> Super Fast HTML Tool
+> Frontend Dev Tool
 
-- Support Typescript, Sass
-- Support DevServer
+- ♟️ Support Typescript, Sass
+- 🛠️ Support DevServer
+- ⚡ Amazing Fast Server
 
 ## Packages
 
