@@ -5,7 +5,6 @@ import { existsSync, readFileSync } from 'fs';
 import { createServer } from 'http';
 import path from 'path';
 import 'colors';
-import * as ts from 'typescript';
 import chokidar from 'chokidar';
 import jsdom from 'jsdom';
 import { Config } from '../../@types';
