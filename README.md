@@ -2,8 +2,8 @@
 
 > Frontend Dev Tool
 
-- ♟️ Support Typescript, Sass
-- 🛠️ Support DevServer
+- ♟️ Typescript, Sass 지원
+- 🛠️ DevServer 지원
 ## Packages
 
 ---
