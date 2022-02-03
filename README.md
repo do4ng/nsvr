@@ -4,8 +4,6 @@
 
 - ♟️ Support Typescript, Sass
 - 🛠️ Support DevServer
-- ⚡ Amazing Fast Server
-
 ## Packages
 
 ---
