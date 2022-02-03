@@ -12,7 +12,7 @@
 | Package                              | Version |
 | ------------------------------------ | ------- |
 | [@nsvr/core](#)                      | `1.0.4` |
-| [create-nsvr](/packages/create-nsvr) | `1.0.4` |
+| [create-nsvr](/packages/create-nsvr) | `1.0.5` |
 
 ## Create App
 
